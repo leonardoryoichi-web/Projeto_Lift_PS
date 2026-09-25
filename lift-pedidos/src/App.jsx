@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import PedidosList from "./components/PedidosList.jsx";
+import PedidoDetalhe from "./components/PedidoDetalhe.jsx";
 import "./App.css";
 
 function App() {
@@ -11,8 +13,8 @@ function App() {
 
       <main className="conteudo">
         <Routes>
-          <Route path="/" element={<p>Lista de pedidos vai aqui</p>} />
-          <Route path="/pedidos/:id" element={<p>Detalhe do pedido vai aqui</p>} />
+          <Route path="/" element={<PedidosList />} />
+          <Route path="/pedidos/:id" element={<PedidoDetalhe />} />
         </Routes>
       </main>
     </div>
